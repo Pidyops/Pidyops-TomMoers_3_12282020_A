@@ -1,0 +1,69 @@
+.footer {
+    background-color: rgba(34, 34, 34, 0.864);
+    color: white;
+    padding: 10px 0 25px 0;
+
+    &__logo {
+        font-family: 'Shrikhand', cursive;
+        font-size: 0.9rem;
+        font-weight: 500;
+        padding: 10px 30px;
+
+    }
+
+    &__icon {
+        font-size: 0.7rem;
+
+        &--gap1 {
+            padding-right: 7px;
+        }
+        &--gap2 {
+            padding-right: 2px;
+        }
+    }
+    
+
+    ul {
+        padding-inline-start: 30px;
+        margin: 0;
+        padding-bottom: 4px;
+    }
+
+footer.a {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    font-size: 0.8rem;
+
+        &:link {
+            color: white;
+        }
+        &:visited {
+            color: white;
+        }
+    }
+}   
+
+
+@media all and (min-width: 768px) {
+   
+    .footer {
+        padding: 20px 60px 50px 60px;
+
+        &__logo {
+            padding: 0 0 20px 0;
+        }
+        
+
+        &__flex-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        ul {
+            
+        }
+    }
+}

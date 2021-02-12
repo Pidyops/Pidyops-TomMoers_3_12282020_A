@@ -1,0 +1,429 @@
+// HELPERS
+@import "helpers/base";
+@import "helpers/mixins";
+@import "helpers/placeholder";
+@import "helpers/variables";
+
+// PAGES
+@import "pages/aboutus";
+@import "pages/footer";
+@import "pages/header";
+@import "pages/nav";
+@import "pages/explorerestaurant";
+@import "pages/thefullpalette";
+
+
+/*               bouncing animation       */
+/*               bouncing animation       */
+
+.bouncer__container {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation: bouncer-fadeout 3s forwards;
+
+}
+
+.bouncer__animation {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 100px;
+    height: 100px;
+    color: blue;
+
+
+
+
+
+    div {
+        width: 20px;
+        height: 20px;
+        background: $color-primary;
+        border-radius: 50%;
+        animation: bouncer 0.45s cubic-bezier(.19,.57,.3,.98) infinite alternate ;
+
+        &:nth-child(2) {
+            animation-delay: 0.1s;
+            opacity: .8;
+        }
+
+        &:nth-child(3) {
+            animation-delay: 0.2s;
+            opacity: .6;
+        }
+
+        &:nth-child(4) {
+            animation-delay: 0.3s;
+            opacity: .4;
+        }
+
+        &:nth-child(5) {
+            animation-delay: 0.4s;
+            opacity: .2;
+        }
+    }
+
+}
+
+@keyframes bouncer {
+    from { transform: translateY(0);}
+    to { transform: translateY(-50px);}
+}
+
+@keyframes bouncer-fadeout {
+    from {}
+
+    80% {
+        opacity: 1;
+        
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.bouncer__page {
+    animation: bouncing-appear 2s cubic-bezier(.63,.19,.84,.95) 2s;
+
+
+}
+
+@keyframes bouncing-appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/*               Paris Belleville       */
+/*               Paris Belleville       */
+.active-restaurant {
+    @extend %flex-center;
+    height: 50px;
+
+    -webkit-box-shadow: inset 0px 5px 5px -3px #B2B2B2; 
+    box-shadow: inset 0px 5px 5px -3px #B2B2B2;
+
+    &__icon {
+        padding: 0 10px;
+    }
+}
+
+/*               Book the menu       */
+/*               Book the menu       */
+.find-restaurant {
+    @extend %flex-center;
+    flex-direction: column;
+    background-color: $color-light-grey;
+    padding: 15px 35px 50px 35px;
+
+
+    &__byline {
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    &__button {
+        border-radius: 25px;
+        @extend %shadow-card;
+        height: 50px;
+        padding: 0 20px;
+        background-image: linear-gradient( 170deg, $color-secondary, $color-primary );
+        border: 0px;
+        cursor: pointer;
+        font-weight: 500;
+        color: white;
+        font-size: 0.9rem;
+        &:hover {
+            background-image: linear-gradient( 170deg, $lighten-color-secondary, $lighten-color-primary );
+            @extend %shadow-card--drop;
+        }
+    }
+
+    
+}
+
+/*               How it works       */
+/*               How it works       */
+/*               How it works       */
+
+.flex-tuto {
+    @extend %flex-column;
+    padding: 20px;
+    background: white;
+
+
+    &__card {
+        display: flex;
+        align-items: center;
+        @extend %shadow-card;
+        background-color: $color-light-grey;
+        border-radius: 20px;
+        height: 65px;
+        margin: 15px 0px 20px 5px;
+        padding: 5px;
+       
+
+    }
+    
+    &__number {
+        background-color: $color-primary;
+        color: white;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        font-size: .8rem;
+        @extend %flex-center;
+        margin: 0 0 0 -13px;
+    }
+
+    &__icon {
+        padding: 0 22px 0 18px;
+    }
+
+    &__icon--grey {
+        color: grey;
+    }
+
+    &__icon--purple {
+        color: $color-primary;
+    }
+}
+
+@media all and (min-width: 768px) {
+	.flex-tuto {
+        padding: 20px 50px 50px 50px;
+        background: white;
+
+        
+        &__mqueries {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            align-content: center;
+            margin: 0 auto;
+            justify-content: space-between;
+        }
+
+        &__card {
+            padding-right: 45px;
+            width: 22%;
+
+            &--middle {
+
+            }
+
+        }
+
+
+
+        &__number {
+            border-radius: 15px;
+            width: 30px;
+            height: 30px;
+            margin: 0 0 0 -21px;
+
+        }
+    }
+}
+
+@media all and (min-width: 768px) {
+
+    h1 {
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .flex-menu {
+        // Why doesn't my place holder is not working?
+        //@extend %mq-block-margin;
+        padding: 20px 50px 50px 50px;
+
+        &__container {
+            display: flex;
+            flex-wrap: wrap ;
+            justify-content: center;
+            justify-content: space-between;
+            
+        }
+        
+        &__card {
+
+
+            flex-basis: 45%;
+
+        }
+    }
+
+
+}
+
+
+
+/*               RESTAURANT       */
+/*               RESTAURANT       */
+/*               RESTAURANT       */
+
+.flex-menu {
+    @extend %flex-column;
+    background-color: $color-light-grey;
+    padding: 20px;
+
+    &__card {
+        @extend %shadow-card;
+        margin-bottom: 15px;
+        border-radius: 15px ;
+
+        &--link {
+            text-decoration: none;
+        }
+
+    }
+
+    &__text {
+        position: relative;
+        z-index: 50;
+    }
+
+    &__img {
+        height: 175px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0 ;
+        
+    }
+
+    &__town {
+        margin: 0 0 10px 10px;
+
+    }
+
+    // !!!! Use checkbox
+
+    &__icon {
+        font-size: 1.5rem;
+        position: absolute;
+        bottom: 9px;
+        right: 28px;
+        font-weight: lighter;
+    }
+}
+
+/* animation heart */
+
+.heart {
+    &__container {
+        display: block;
+        font-size: 1.5rem;
+        position: relative;
+
+        padding: 2px;
+
+        input:checked + label .heart-full {
+            animation: animation-heart 1s ease forwards;
+        }
+
+        input:checked + label .heart-full--title {
+            animation: animation-heart 1s ease forwards;
+        }
+    }
+
+
+    &-full {
+        font-size: 1.4rem;
+        position: absolute;
+        top: -50px;
+        right: 28px;
+        opacity: 0;
+
+        animation: animation-heart--reset 1s ease;
+
+        &--title {
+            opacity: 0;
+            font-size: 1.4rem;
+            color: tomato;
+            position: absolute;
+            top: -34px;
+            right: 29px;
+            animation: animation-heart--reset 1s ease;
+        }
+    }
+    
+    &-border {
+        color: black;
+        position: absolute;
+        top: -52px;
+        right: 27px;
+        z-index: 5;
+        
+        &--title {
+            position: absolute;
+            top: -36px;
+            right: 28px;
+        }
+    
+    }
+}
+
+.instagram {
+    cursor: pointer;
+    background: pink;
+      background: linear-gradient( 170deg, $color-secondary, $color-primary );
+      background: linear-gradient( 170deg, $color-secondary, $color-primary );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font: {
+          size: 1.4rem;
+      };
+  }
+    @keyframes animation-heart {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes animation-heart--reset {
+        from {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0;
+        }
+    }
+
+
+
+
+
+a {
+    text-decoration: none;
+
+    &:link {
+        color: black;
+    }
+    &:visited {
+        color: black;
+    }
+}
+
