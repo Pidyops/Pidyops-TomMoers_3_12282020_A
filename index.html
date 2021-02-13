@@ -43,10 +43,10 @@
             <!--               Book the menu                   -->
             <!--               Book the menu                   -->
             <div class="find-restaurant" >
-                <h1 class="find-restaurant__heading" >Book the menu you like</h1>
+                <div class="find-restaurant__heading">Book the menu you like</div>
                 <p class="find-restaurant__byline">Discover top-of-the-art restaurants we picked for you</p>
                 <a class="find-restaurant__a" href="explorerestaurant.html" target="_blank">
-                    <button class="find-restaurant__button">Explore our restaurants</button>
+                    <div class="find-restaurant__button">Explore our restaurants</div>
                 </a>
                 
             </div>
@@ -56,7 +56,7 @@
         <!--               HOW IT WORKS                    -->
         <!--               HOW IT WORKS                    -->
         <!--               HOW IT WORKS                    -->
-        <section class="flex-tuto"><h1 class="flex-tuto__title">How it works</h1>
+        <div class="flex-tuto"><div class="flex-tuto__title">How it works</div>
             <div class="flex-tuto__mqueries">
                 <div class="flex-tuto__card">
                     <span class="flex-tuto__number">1</span>
@@ -70,110 +70,146 @@
                     <span class="flex-tuto__indication">Create your menu</span>
                 </div>
 
-                <div class="flex-tuto__card">
+                <div class="flex-tuto__card flex-tuto__card--colored">
                     <span class="flex-tuto__number">3</span>
                     <span class="flex-tuto__icon flex-tuto__icon--purple"><i class="fas fa-store"></i></span>
                     <span class="flex-tuto__indication">Go enjoy it at the restaurant</span>
                 </div>
             </div>
 
-        </section>
+        </div>
 
 
         <!--               RESTAURANT                    -->
         <!--               RESTAURANT                    -->
         <!--               RESTAURANT                    -->
-        <main class="flex-menu"><h1>Restaurants</h1>
+        <div class="flex-menu"><h1>Restaurants</h1>
             <div class="flex-menu__container">
-                <div class="flex-menu__card"><a class="flex-menu__card--link" href="/thefullpalette.html" target='_blank'>
-                    <div><img  class="flex-menu__img" src="img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image of the restaurant The Full Palette at New york"></div>
-                    <div class="flex-menu__text">
-                        <h2>The Full Palette</h2>
-                        <div class="flex-menu__town">New York</div>
-                        <div class="heart__container">
-                            <input class="checkbox-initial" type="checkbox" id="check-1" hidden>
-                            <label class="checkmarkt" for='check-1'>
-                              <div class="heart-full "><i class="fa fa-heart instagram" aria-hidden="true"></i></div>
-                              <div class="heart-border"><i class="heart-border-icon far fa-heart"></i></div>
-                            </label>
+                <div class="flex-menu__card">
+                    <a class="flex-menu__card--link" href="/thefullpalette.html" target='_blank'>
+                        <div><img  class="flex-menu__img" src="img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image of the restaurant The Full Palette at New york"></div>
+                    </a>
+                        <div class="flex-menu__text">
+                            <a class="flex-menu__card--link" href="/thefullpalette.html" target='_blank'>
+                            <h2>The Full Palette</h2>
+                            </a>
+                            <a class="flex-menu__card--link" href="/thefullpalette.html" target='_blank'>
+                            <div class="flex-menu__town">New York</div>
+                            </a>
+                            <div class="heart__container">
+                                <input class="checkbox-initial" type="checkbox" id="check-1" hidden>
+                                <label class="checkmarkt" for='check-1'>
+                                    <i class="fa fa-heart instagram heart-full" aria-hidden="true"></i>
+                                    <i class="heart-border-icon far fa-heart heart-border"></i>
+                                </label>
+                            </div>
                         </div>
-                    </a></div>
+                    
+                </div>
             
-                </div>
+            
 
-                <div class="flex-menu__card"><a class="flex-menu__card--link" href="/theenchantedplate.html" target='_blank'>
-                    <div><img  class="flex-menu__img" src="img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Image of the restaurant The Enchantaed Plate at New york"></div>
-                    <div class="flex-menu__text">
-                        <h2>The Enchanted Plate</h2>
-                        <div class="flex-menu__town">New York</div>
-                        <div class="heart__container">
-                            <input class="checkbox-initial" type="checkbox" id="check-2" hidden>
-                            <label class="checkmarkt" for='check-2'>
-                              <div class="heart-full "><i class="fa fa-heart instagram" aria-hidden="true"></i></div>
-                              <div class="heart-border"><i class="heart-border-icon far fa-heart"></i></div>
+                <div class="flex-menu__card">
+                    <a class="flex-menu__card--link" href="/theenchantedplate.html" target='_blank'>
+                        <div><img  class="flex-menu__img" src="img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Image of the restaurant The Enchantaed Plate at New york"></div>
+                    </a>
+                        
+                        <div class="flex-menu__text">
+                            <a class="flex-menu__card--link" href="/theenchantedplate.html" target='_blank'>
+                            <h2>The Enchanted Plate</h2></a>
+                            <a class="flex-menu__card--link" href="/theenchantedplate.html" target='_blank'>
+                            <div class="flex-menu__town">New York</div></a>                            
+                            <div class="heart__container">
+                                <input class="checkbox-initial" type="checkbox" id="check-2" hidden>
+                                <label class="checkmarkt" for='check-2'>
+                                    <i class="fa fa-heart instagram heart-full" aria-hidden="true"></i>
+                                    <i class="heart-border-icon far fa-heart heart-border"></i>
                             </label>
+                            </div>
                         </div>
-                    </a></div>
-                
+                    
+                    
                 </div>
 
-                <div class="flex-menu__card"><a class="flex-menu__card--link" href="/bastille.html" target='_blank'>
+                <div class="flex-menu__card">
+                    <a class="flex-menu__card--link" href="/bastille.html" target='_blank'>
                     <div><img  class="flex-menu__img" src="img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Image of the Restaurant Bastille at New York"></div>
-                    <div class="flex-menu__text">
-                        <h2>Bastille</h2>
-                        <div class="flex-menu__town">New York</div>
-                        <div class="heart__container">
-                            <input class="checkbox-initial" type="checkbox" id="check-3" hidden>
-                            <label class="checkmarkt" for='check-3'>
-                              <div class="heart-full "><i class="fa fa-heart instagram" aria-hidden="true"></i></div>
-                              <div class="heart-border"><i class="heart-border-icon far fa-heart"></i></div>
-                            </label>
+                    </a>
+                        
+                        <div class="flex-menu__text">
+                            <a class="flex-menu__card--link" href="/bastille.html" target='_blank'>
+                            <h2>Bastille</h2>
+                            </a>
+                            <a class="flex-menu__card--link" href="/bastille.html" target='_blank'><div class="flex-menu__text">
+
+                            </div><div class="flex-menu__town">New York</div></a>
+                            <div class="heart__container">
+                                <input class="checkbox-initial" type="checkbox" id="check-3" hidden>
+                                <label class="checkmarkt" for='check-3'>
+                                    <i class="fa fa-heart instagram heart-full" aria-hidden="true"></i>
+                                    <i class="heart-border-icon far fa-heart heart-border"></i>
+                                </label>
+                            </div>
                         </div>
-                    </a></div>
+                    
                 
                 </div>
 
-                <div class="flex-menu__card"><a class="flex-menu__card--link" href="/legourmand.html" target='_blank'>
-                    <div><img  class="flex-menu__img" src="img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Image of the restaurant Le Gourmand at New York"></div>
-                    <div class="flex-menu__text">
-                        <h2>Le Gourmand</h2>
-                        <div class="flex-menu__town">New York</div>
-                        <div class="heart__container">
-                            <input class="checkbox-initial" type="checkbox" id="check-4" hidden>
-                            <label class="checkmarkt" for='check-4'>
-                              <div class="heart-full "><i class="fa fa-heart instagram" aria-hidden="true"></i></div>
-                              <div class="heart-border"><i class="heart-border-icon far fa-heart"></i></div>
-                            </label>
+                <div class="flex-menu__card">
+                    <a class="flex-menu__card--link" href="/legourmand.html" target='_blank'>
+                        <div><img  class="flex-menu__img" src="img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Image of the restaurant Le Gourmand at New York"></div>
+                    </a>
+                        <div class="flex-menu__text">
+                            <a class="flex-menu__card--link" href="/legourmand.html" target='_blank'>
+                            <h2>Le Gourmand</h2></a>
+                            <a class="flex-menu__card--link" href="/legourmand.html" target='_blank'>
+                            <div class="flex-menu__town">New York</div></a>
+                            <div class="heart__container">
+                                <input class="checkbox-initial" type="checkbox" id="check-4" hidden>
+                                <label class="checkmarkt" for='check-4'>
+                                <i class="fa fa-heart instagram heart-full" aria-hidden="true"></i>
+                                <i class="heart-border-icon far fa-heart heart-border"></i>
+                                </label>
+                            </div>
                         </div>
-                    </a></div>
+                    
+                
                 
                 </div>
             </div>
+        </div>
             
 
-        </main>
+        </div>
 
         <!--               FOOTER                    -->
         <!--               FOOTER                    -->
         <!--               FOOTER                    -->
         <footer class="footer">
             <div class="footer__logo">ohmyfood</div>
-                <div class="footer__flex-container">
-                    <ul>
-                        <span class="footer__icon footer__icon--gap1"><i class="fas fa-utensils"></i></span>
-                        <a href="#" target="_blank">Suggest a restaurant</a>
-                    </ul>
-                    <ul>
-                        <span class="footer__icon footer__icon--gap2"><i class="fas fa-hands-helping"></i></span>
-                        <a href="#" target="_blank">Become a partner</a>
-                    </ul>
-                    <ul><a href="#" target="_blank">Legal</a></ul>
-                    <ul><a href="aboutus.html" target="_blank">About us</a></ul>
-                    <ul><a href="mailto:tommoers36@hotmail.com" target="_blank" rel="noopener noreferrer">contact</a></ul>
-                </div> 
-
+                    <div class="footer__flex-container">
+                        <div class="footer__bullet-point">
+                            <a href="#" target="_blank">
+                                <span class="footer__icon footer__icon--gap1"><i class="fas fa-utensils"></i></span>
+                                <span>Suggest a restaurant</span>
+                            </a>
+                        </div>
+    
+                        <div class="footer__bullet-point">
+                            <a href="#" target="_blank">
+                                <span class="footer__icon footer__icon--gap2"><i class="fas fa-hands-helping"></i></span>
+                                <span>Become a partner</span>
+                            </a>
+                        </div>
+    
+                        <div class="footer__bullet-point"><a href="#" target="_blank">Legal</a></div>
+                        <div class="footer__bullet-point"><a href="aboutus.html" target="_blank">About us</a></div>
+                        <div class="footer__bullet-point"><a href="mailto:tommoers36@hotmail.com" target="_blank" rel="noopener noreferrer">contact</a></div>
+                            
+                    </div> 
+            
         </footer>
-    </div>
+
     
 </body>
 </html>

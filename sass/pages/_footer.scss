@@ -5,14 +5,14 @@
 
     &__logo {
         font-family: 'Shrikhand', cursive;
-        font-size: 0.9rem;
+        font-size: 1.1rem;
         font-weight: 500;
         padding: 10px 30px;
 
     }
 
     &__icon {
-        font-size: 0.7rem;
+        font-size: 1rem;
 
         &--gap1 {
             padding-right: 7px;
@@ -22,15 +22,20 @@
         }
     }
     
-
-    ul {
-        padding-inline-start: 30px;
+    &__bullet-point {
+        font-size: 1rem;
+        padding-left: 30px;
         margin: 0;
         padding-bottom: 4px;
+        font-family: $font-familly-body;
     }
 
 footer.a {
     color: white;
+    
+
+
+
 }
 
 a {
@@ -51,6 +56,10 @@ a {
    
     .footer {
         padding: 20px 60px 50px 60px;
+
+        &__bullet-point {
+            padding-left: 0px;
+        }
 
         &__logo {
             padding: 0 0 20px 0;

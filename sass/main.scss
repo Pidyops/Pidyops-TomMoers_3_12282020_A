@@ -132,6 +132,14 @@
     background-color: $color-light-grey;
     padding: 15px 35px 50px 35px;
 
+    &__heading {
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        font-weight: 700;
+        padding-top: 15px;
+    }
+
 
     &__byline {
         text-align: center;
@@ -139,6 +147,9 @@
     }
 
     &__button {
+        display: flex;
+        align-items: center;
+
         border-radius: 25px;
         @extend %shadow-card;
         height: 50px;
@@ -146,7 +157,7 @@
         background-image: linear-gradient( 170deg, $color-secondary, $color-primary );
         border: 0px;
         cursor: pointer;
-        font-weight: 500;
+        font-weight: 600;
         color: white;
         font-size: 0.9rem;
         &:hover {
@@ -167,6 +178,13 @@
     padding: 20px;
     background: white;
 
+    &__title {
+        font-size: 1.5rem;
+        display: flex;
+        font-weight: 700;
+        padding-top: 15px;
+    }
+
 
     &__card {
         display: flex;
@@ -178,6 +196,9 @@
         margin: 15px 0px 20px 5px;
         padding: 5px;
        
+        &--colored {
+            background: $lighten-strong-color-primary;
+        }
 
     }
     
@@ -190,6 +211,7 @@
         font-size: .8rem;
         @extend %flex-center;
         margin: 0 0 0 -13px;
+        position:absolute;
     }
 
     &__icon {
@@ -207,7 +229,6 @@
 
 @media all and (min-width: 768px) {
 	.flex-tuto {
-        padding: 20px 50px 50px 50px;
         background: white;
 
         
@@ -216,8 +237,7 @@
             flex-direction: row;
             text-align: center;
             align-content: center;
-            margin: 0 auto;
-            justify-content: space-between;
+            justify-content: space-around;
         }
 
         &__card {
@@ -244,22 +264,20 @@
 
 @media all and (min-width: 768px) {
 
-    h1 {
+    .flex-tuto__title{
         font-size: 1.5rem;
         display: flex;
         justify-content: center;
     }
     
     .flex-menu {
-        // Why doesn't my place holder is not working?
-        //@extend %mq-block-margin;
         padding: 20px 50px 50px 50px;
 
         &__container {
             display: flex;
             flex-wrap: wrap ;
             justify-content: center;
-            justify-content: space-between;
+            justify-content: space-around;
             
         }
         
@@ -427,3 +445,7 @@ a {
     }
 }
 
+h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
